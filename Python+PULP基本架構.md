@@ -1,9 +1,9 @@
 # Python+Pulp基本架構
-## (一)Python+Gurobi架構 
+## (一)Python+Pulp架構 
 ### ● 在Python介面中，數學式子的寫法相似於原本的式子，只是將式子都拆解開來
 <img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/python%E6%95%B8%E5%AD%B8%E5%BC%8F%E5%AD%90.png" width="550">
 
-### ● 在利用Python+Pulp建構一個數學規劃時，通常會依照此順序進行設定變數、目標函數、限制式等
+### ● 在利用Python+Pulp建構數學規劃時，通常會依照此順序進行設定變數、目標函數、限制式等
 <img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/pulp%20flow.png" >
 
 ### ● Import Module
