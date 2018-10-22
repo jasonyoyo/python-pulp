@@ -55,13 +55,13 @@ model += pulp.lpSum([ing_hour[i,'MON'] for i in operator]) == 14
 |%e|指數，科學計數法|
 |%g|根據值的大小決定使用%f或%e|
 #### e.g.
+
 ```python
 print('She is %s. She weights %gkg and is %dcm tall.'%('Rima',50.4,166))
-
 ```
-```python
     She is Rima. She weights 50.4kg and is 166cm tall.
-```
+    
+    
 
 ## (二)常用的三大函數及屬性
 ### 1.三大函數
