@@ -10,5 +10,8 @@ Pulp package use for linear optimization
 ## Pulp下載
 
 #### 步驟一 : 打開 Anaconda Prompt
-
+<img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/python%E6%95%B8%E5%AD%B8%E5%BC%8F%E5%AD%90.png" width="550">
 #### 步驟二 : 輸入 pip install pulp
+<img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/python%E6%95%B8%E5%AD%B8%E5%BC%8F%E5%AD%90.png" width="550">
+### 步驟三 : 安裝完成
+<img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/python%E6%95%B8%E5%AD%B8%E5%BC%8F%E5%AD%90.png" width="550">
