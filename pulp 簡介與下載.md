@@ -1,5 +1,4 @@
-# PULP簡介與下載
-
+# Pulp簡介與下載
 ## Pulp 簡介
 
 PuLP is a free open source software written in Python. It is used to describe optimisation problems as mathematical models.
@@ -9,3 +8,5 @@ PuLP can then call any of numerous external LP solvers (CBC, GLPK, CPLEX, Gurobi
 Pulp package use for linear optimization
 
 ## Pulp下載
+
+#### 步驟一:
