@@ -91,7 +91,7 @@ print('She is %s. She weights %gkg and is %dcm tall.'%('Rima',50.4,166))
 ### ● Model attributes:
 |Attribute Name|Description|
 |-----|-----|
-|**objective**|objective value for current solution|
+|**value(model.objective)**|objective value for current solution|
 |**status**|The return status of the problem from the solver.|
 |**varValue**|Value in the current solution|
 |**variables.name**|variable name|
