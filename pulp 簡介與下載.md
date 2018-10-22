@@ -9,4 +9,6 @@ Pulp package use for linear optimization
 
 ## Pulp下載
 
-#### 步驟一:
+#### 步驟一 : 打開 Anaconda Prompt
+
+#### 步驟二 : 輸入 pip install pulp
