@@ -66,7 +66,7 @@ print('She is %s. She weights %gkg and is %dcm tall.'%('Rima',50.4,166))
 ## (二)常用的四大函數及屬性
 ### 1.四大函數
 在建立一個數學規劃時，我們必須加入我們的決策變數、目標函數及限制式，以下是在設定這些變數及式子常用的三大函數的詳細內容介紹
-<br>P.S. 在pulp中設定目標函數及限制式還有其他不一樣的方式，在此只介紹這四個函數的應用，若想要有更進一步的了解可至[pulp網站](https://pythonhosted.org/PuLP/index.html)內的查詢
+<br>P.S. 在pulp中設定目標函數及限制式還有其他不一樣的方式，在此只介紹這四個函數的應用，若想要有更進一步的了解可至[pulp網站](https://pythonhosted.org/PuLP/pulp.html)內的查詢
 
 ### ● 決策變數函數(Create Decision Variables)
 
@@ -87,25 +87,12 @@ print('She is %s. She weights %gkg and is %dcm tall.'%('Rima',50.4,166))
 
 ### 2.Pulp attributes
 在pulp中，可以透過各種屬性來查詢或更改所建立數學規劃的內容，以下為常用的幾個屬性:
-<br>P.S. 更多屬性查詢，可點擊[這裡](https://www.gurobi.com/documentation/7.0/refman/attributes.html)
+<br>P.S. 更多屬性查詢，可點擊[這裡](https://www.coin-or.org/PuLP/pulp.html)
 ### ● Model attributes:
 |Attribute Name|Description|
 |-----|-----|
-|**NumVars**|Number of variables|
-|**NumConstrs**|Number of linear constraints|
-|**ObjVal**|objective value for current solution|
-
-### ● Variable attributes:
-|Attribute Name|Description|
-|-----|-----|
-|**LB**|Lower bound|
-|**Obj**|Linear objective coefficient|
-|**VarName**|Variable name|
-|**X**|Value in the current solution|
-
-### ● Linear constraint attributes:
-|Attribute Name|Description|
-|-----|-----|
-|**ConstrName**|Constraint name|
-|**Pi**|Dual value (also known as the shadow price)|
-|**Slack**|Slack in the current solution|
+|**value(model.objective)**|objective value for current solution|
+|**status**|The return status of the problem from the solver.|
+|**varValue**|Value in the current solution|
+|**variables.name**|variable name|
+|**slove()**|slove the problem|
