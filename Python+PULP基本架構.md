@@ -33,13 +33,13 @@ if <condition>:
  <do something if condition is true here>
 ```
 
-### ● quicksum()相當於Python的sum()函數及數學符號 ∑
+### ● lpSum()相當於Python的sum()函數及數學符號 ∑
 #### e.g.
 <br> <img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/quicksum_example.png" width="200">
-<br>上述限制式在Python+Gurobi中表示為:
+<br>上述限制式在Python+Pulp中表示為:
+
 ```python
-for i in I:
-    m.addConstr(quicksum(x[i,j] for j in J)<=5)
+model += pulp.lpSum([ing_hour[i,'MON'] for i in operator]) == 14
 ```
 
 ### ● Python字符串格式化
