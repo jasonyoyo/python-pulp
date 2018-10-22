@@ -5,6 +5,16 @@
 
 ### ● 在利用Python+Pulp建構一個數學規劃時，通常會依照此順序進行設定變數、目標函數、限制式等
 <img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/Python%2Bgurobi%20%E6%9E%B6%E6%A7%8B.png" width="650">
+### ● Import Module
+ python中一開始要先import Module才可以做使用，分為兩種方式:
+ ```python
+import pulp
+pulp.pulp TestALL()
+```
+```python
+from pulp import*
+pulp TestALL()
+```
 
 ### ● 建模時常用的for迴圈及if條件句
  Python中宣告for迴圈及if條件式後，記得用**冒號':'** 來結束聲明，接著在下一行打上要對for迴圈或if條件式做的事情，在此要特別注意的是Python是透過**縮排**來辨別不同的程式區塊，因此在下一行開始前，要記得按**tab鍵**來做區隔，這樣程式才知道他們是包含在for迴圈跟if條件句之下的程式碼。
