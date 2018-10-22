@@ -57,15 +57,11 @@ model += pulp.lpSum([ing_hour[i,'MON'] for i in operator]) == 14
 #### e.g.
 ```python
 print('She is %s. She weights %gkg and is %dcm tall.'%('Rima',50.4,166))
-```
-    She is Rima. She weights 50.4kg and is 166cm tall.
 
 ```python
-print('obj:%d'%m.objVal)
+    She is Rima. She weights 50.4kg and is 166cm tall.
 ```
-```
-obj:36
-```
+
 ## (二)常用的三大函數及屬性
 ### 1.三大函數
 在建立一個數學規劃時，我們必須加入我們的決策變數、目標函數及限制式，以下是在設定這些變數及式子常用的三大函數的詳細內容介紹
