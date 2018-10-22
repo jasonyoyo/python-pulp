@@ -5,8 +5,11 @@
 
 ### ● 在利用Python+Pulp建構一個數學規劃時，通常會依照此順序進行設定變數、目標函數、限制式等
 <img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/Python%2Bgurobi%20%E6%9E%B6%E6%A7%8B.png" width="650">
+
 ### ● Import Module
+
  python中一開始要先import Module才可以做使用，分為兩種方式:
+ 
  ```python
 import pulp
 pulp.pulp TestALL()
