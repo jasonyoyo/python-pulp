@@ -15,5 +15,5 @@ Pulp package use for linear optimization
 #### 步驟二 : 輸入 pip install pulp
 <img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/install%20pip.png" width="550">
 
-### 步驟三 : 安裝完成
+#### 步驟三 : 安裝完成
 <img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/success.png" width="550">
