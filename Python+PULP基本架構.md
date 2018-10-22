@@ -66,26 +66,27 @@ print('She is %s. She weights %gkg and is %dcm tall.'%('Rima',50.4,166))
 ## (二)常用的四大函數及屬性
 ### 1.四大函數
 在建立一個數學規劃時，我們必須加入我們的決策變數、目標函數及限制式，以下是在設定這些變數及式子常用的三大函數的詳細內容介紹
-<br>P.S. 在pulp中設定目標函數及限制式還有其他不一樣的方式，在此只介紹這三個函數的應用，若想要有更進一步的了解可至[pulp網站](https://pythonhosted.org/PuLP/index.html)內的查詢
+<br>P.S. 在pulp中設定目標函數及限制式還有其他不一樣的方式，在此只介紹這四個函數的應用，若想要有更進一步的了解可至[pulp網站](https://pythonhosted.org/PuLP/index.html)內的查詢
 
 ### ● 決策變數函數(Create Decision Variables)
 
  變數預設的範圍上限為無限，下限為0，變數型態為連續變數(continuous)<br>
  
-<img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/m.addvar.png" width="700"><br>
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/variable.png" width="700"><br>
 
 ### ● 定義問題(Formulate Problem)
 
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/problem.png" width="700"><br>
 
 ### ● 目標函數(Add Objective Function)
-<img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/m.setobjective.png" width="700"><br>
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/obj.png" width="700"><br>
 
 ### ● 限制式函數(Add Constraints)
-<img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/m.addconstr.png" width="700">
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/constraint.png" width="700">
 
 
-### 2.Gurobi attributes
-在Guroib中，可以透過各種屬性來查詢或更改所建立數學規劃的內容，以下為常用的幾個屬性:
+### 2.Pulp attributes
+在pulp中，可以透過各種屬性來查詢或更改所建立數學規劃的內容，以下為常用的幾個屬性:
 <br>P.S. 更多屬性查詢，可點擊[這裡](https://www.gurobi.com/documentation/7.0/refman/attributes.html)
 ### ● Model attributes:
 |Attribute Name|Description|
