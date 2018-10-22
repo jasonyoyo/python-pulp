@@ -58,6 +58,7 @@ model += pulp.lpSum([ing_hour[i,'MON'] for i in operator]) == 14
 ```python
 print('She is %s. She weights %gkg and is %dcm tall.'%('Rima',50.4,166))
 
+```
 ```python
     She is Rima. She weights 50.4kg and is 166cm tall.
 ```
