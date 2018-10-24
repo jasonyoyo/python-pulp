@@ -17,7 +17,7 @@
 
 ## (三)數學模式
 
-<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E6%95%B8%E5%AD%B8%E5%BC%8F.png" width="600">
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E6%95%B8%E5%AD%B8%E5%BC%8F.png" width="400">
 <img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E9%81%8E%E7%A8%8B.png" width="600">
 
 
