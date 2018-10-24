@@ -27,7 +27,6 @@
 
 ## 2.Python+Pulp建模
 
-<img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/Python%2Bgurobi%E5%BB%BA%E6%A8%A1/example.png" width="450">
 
 ## Import pulp
 
