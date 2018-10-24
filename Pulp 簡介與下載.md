@@ -10,10 +10,10 @@ Pulp package use for ***linear optimization***
 ## (二)Pulp下載
 
 #### 步驟一 : 打開 Anaconda Prompt
-<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/anaconda%20prompt.png" width="550">
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/anaconda%20prompt.png" width="550"><br>
 
 #### 步驟二 : 輸入 pip install pulp
-<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/install%20pip.png" width="550">
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/install%20pip.png" width="550"><br>
 
 #### 步驟三 : 安裝完成
 <img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/success.png" width="550">
