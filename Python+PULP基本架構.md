@@ -66,18 +66,18 @@ print('She is %s. She weights %gkg and is %dcm tall.'%('Rima',50.4,166))
 
 ## (二)常用的四大函數及屬性
 ### 1.四大函數
-在建立一個數學規劃時，我們必須加入我們的決策變數、目標函數及限制式，以下是在設定這些變數及式子常用的三大函數的詳細內容介紹
+在建立一個數學規劃時，我們必須加入我們的決策變數、目標函數及限制式，以下是在設定這些變數及式子常用的四大函數的詳細內容介紹
 <br>P.S. 在pulp中設定目標函數及限制式還有其他不一樣的方式，在此只介紹這四個函數的應用，若想要有更進一步的了解可至[pulp網站](https://pythonhosted.org/PuLP/pulp.html)內的查詢
+
+### ● 定義問題(Formulate Problem)
+
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/problem.png" width="700"><br>
 
 ### ● 決策變數函數(Create Decision Variables)
 
  變數預設的範圍上限為無限，下限為0，變數型態為連續變數(continuous)<br>
  
 <img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/variable.png" width="700"><br>
-
-### ● 定義問題(Formulate Problem)
-
-<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/problem.png" width="700"><br>
 
 ### ● 目標函數(Add Objective Function)
 <img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/obj.png" width="700"><br>
