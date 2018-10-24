@@ -22,7 +22,7 @@
 
 ## (四)Python+Pulp建模求解
 ## 1.建模流程
-<img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/Python%2Bgurobi%E5%BB%BA%E6%A8%A1%E6%B5%81%E7%A8%8B.png" width="750">
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E5%BB%BA%E7%AB%8B%E7%92%B0%E5%A2%83.png" width="750">
 
 ## 2.Python+Pulp建模
 
