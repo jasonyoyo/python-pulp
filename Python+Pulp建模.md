@@ -17,7 +17,8 @@
 
 ## (三)數學模式
 
-<img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/Python%2Bgurobi%E5%BB%BA%E6%A8%A1/%E5%BB%BA%E6%A8%A1%E7%AF%84%E4%BE%8B.png" width="850">
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E6%95%B8%E5%AD%B8%E5%BC%8F.png" width="500">
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E9%81%8E%E7%A8%8B.png" width="500">
 
 
 ## (四)Python+Pulp建模求解
