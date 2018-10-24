@@ -39,7 +39,7 @@ from pulp import* #導入pulp函式庫
 
 
 ```python
-model = pulp.LpProblem("Cost min", pulp.LpMaximize) # 建立一個新的model，命名為model
+model = pulp.LpProblem("value max", pulp.LpMaximize) # 建立一個新的model，命名為model
 ```
 
 ## Add decision variable
@@ -73,15 +73,16 @@ model += x+y >= 1
 
 
 ## Result
-- 如果不想要顯示求解的過程，可在optimize()之前加入此程式碼：**m.setParam('OutputFlag',0)**
 
 ```python
-m.optimize() # m.optimize()求解
-# 透過屬性varName、x顯示決策變數名字及值
-for v in m.getVars():
-    print('%s %g' % (v.varName, v.x))
-# 透過屬性objVal顯示最佳解
-print('Obj: %g' % m.objVal)
+model.solve()  # mmodel.solve()求解
+
+# 透過屬性varValue,name顯示決策變數名字及值
+for v in model.variables():
+    print(v.name, "=", v.varValue)
+    
+# 透過屬性value(model.objective)顯示最佳解
+print(value(model.objective))
 ```
 ```
 Optimize a model with 2 rows, 3 columns and 5 nonzeros
