@@ -82,30 +82,11 @@ for v in model.variables():
     print(v.name, "=", v.varValue)
     
 # 透過屬性value(model.objective)顯示最佳解
-print(value(model.objective))
+print('obj=',value(model.objective))
 ```
 ```
-Optimize a model with 2 rows, 3 columns and 5 nonzeros
-Variable types: 0 continuous, 3 integer (3 binary)
-Coefficient statistics:
-  Matrix range     [1e+00, 3e+00]
-  Objective range  [1e+00, 2e+00]
-  Bounds range     [1e+00, 1e+00]
-  RHS range        [1e+00, 4e+00]
-Found heuristic solution: objective 2
-Presolve removed 2 rows and 3 columns
-Presolve time: 0.06s
-Presolve: All rows and columns removed
-
-Explored 0 nodes (0 simplex iterations) in 0.23 seconds
-Thread count was 1 (of 4 available processors)
-
-Solution count 2: 3 2 
-
-Optimal solution found (tolerance 1.00e-04)
-Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
-x 1
-y 0
-z 1
-Obj: 3
+x = 1.0
+y = 0.0
+z = 1.0
+obj= 3.0
 ```
