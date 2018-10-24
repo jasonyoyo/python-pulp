@@ -1,10 +1,6 @@
-# Python+Gurobi建模
+# Python+Pulp建模
 
-*POLab*
-<br>
-*2017/10/08*
-<br>
-[【回到首頁】](https://github.com/PO-LAB/Python-Gurobi)
+
 
 ## (一)最佳化流程
 <img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/Python%2Bgurobi%E5%BB%BA%E6%A8%A1/%E6%9C%80%E4%BD%B3%E5%8C%96%E6%B5%81%E7%A8%8B.png" width="650">
@@ -24,57 +20,49 @@
 <img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/Python%2Bgurobi%E5%BB%BA%E6%A8%A1/%E5%BB%BA%E6%A8%A1%E7%AF%84%E4%BE%8B.png" width="850">
 
 
-## (四)Python+Gurobi建模求解
+## (四)Python+Pulp建模求解
 ## 1.建模流程
 <img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/Python%2Bgurobi%E5%BB%BA%E6%A8%A1%E6%B5%81%E7%A8%8B.png" width="750">
 
-## 2.Python+Gurobi建模
+## 2.Python+Pulp建模
 
 <img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/Python%2Bgurobi%E5%BB%BA%E6%A8%A1/example.png" width="450">
 
-## Import gurobipy
+## Import pulp
 
 
 ```python
-from gurobipy import* #導入Gurobi函式庫
+from pulp import* #導入pulp函式庫
 ```
 
 ## Model
 
 
 ```python
-m=Model('mip1') # 建立一個新的model，並傳至m
+model = pulp.LpProblem("Cost min", pulp.LpMaximize) # 建立一個新的model，命名為model
 ```
 
 ## Add decision variable
 
 
 ```python
-x = m.addVar(vtype=GRB.BINARY, name="x")  # m.addVar()加入變數
-y = m.addVar(vtype=GRB.BINARY, name="y")
-z = m.addVar(vtype=GRB.BINARY, name="z")
+x = pulp.LpVariable('x',lowBound = 0, cat='Binary')  #  pulp.LpVariable()加入變數
+y = pulp.LpVariable('y',lowBound = 0, cat='Binary')
+z = pulp.LpVariable('z',lowBound = 0, cat='Binary')
 ```
 
-## Update
 
-
-```python
-m.update() #更新此model
-```
 
 ## Add objective and constraints
 
 
 ```python
-# m.setObjective()設置目標函數
-m.setObjective(x + y + 2 * z, GRB.MAXIMIZE) 
+# model += 設置目標函數
+model += x+y+2*z
 
-# m.addConstr()加入限制式
-# Add constraint: x + 2 y + 3 z <= 4
-m.addConstr(x + 2 * y + 3 * z <= 4, "c0") 
-
-# Add constraint: x + y >= 1
-m.addConstr(x + y >= 1, "c1")
+# model += 加入限制式
+model += x+2*y+3*z <= 4
+model += x+y >= 1
 ```
 
 
