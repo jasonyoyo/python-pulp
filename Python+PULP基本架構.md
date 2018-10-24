@@ -71,7 +71,7 @@ print('She is %s. She weights %gkg and is %dcm tall.'%('Rima',50.4,166))
 
 ### ● 定義問題(Formulate Problem)
 
-<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E5%AE%9A%E7%BE%A9%E5%95%8F%E9%A1%8C.png" width="700"><br>
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E5%AE%9A%E7%BE%A9%E5%95%8F%E9%A1%8C.png" width="650"><br>
 
 ### ● 決策變數函數(Create Decision Variables)
 
