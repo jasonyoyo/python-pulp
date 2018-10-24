@@ -3,7 +3,7 @@
 
 
 ## (一)最佳化流程
-<img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/Python%2Bgurobi%E5%BB%BA%E6%A8%A1/%E6%9C%80%E4%BD%B3%E5%8C%96%E6%B5%81%E7%A8%8B.png" width="650">
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E5%88%86%E6%9E%90%E5%95%8F%E9%A1%8C.png" width="650">
 
 ## (二)問題產生
 ● 有x、y、z三個活動想在同一天舉辦<br>
