@@ -39,7 +39,8 @@ if <condition>:
 <br>上述限制式在Python+Pulp中表示為:
 
 ```python
-model += pulp.lpSum([ing_hour[i,'MON'] for i in operator]) == 14
+for i in I:
+   model += pulp.lpSum(x[i,j] for j in J]) <=5
 ```
 
 ### ● Python字符串格式化
