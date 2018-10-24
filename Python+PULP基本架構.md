@@ -95,23 +95,39 @@ print('She is %s. She weights %gkg and is %dcm tall.'%('Rima',50.4,166))
 ```python
 total_cost = pulp.value(model.objective)
 ```
+
+|Attribute Name|Description|
+|-----|-----|
 |**status**|The return status of the problem from the solver.|
 ```python
 model.status
 ```
+```
 1
+```
 ```python
 pulp.LpStatus[model.status]
 ```
+```
 'Optimal'
+```
+
+|Attribute Name|Description|
+|-----|-----|
 |**varValue**|Value in the current solution|
 ```python
 total_cost = pulp.value(model.objective)
 ```
+
+|Attribute Name|Description|
+|-----|-----|
 |**variables.name**|variable name|
 ```python
 total_cost = pulp.value(model.objective)
 ```
+
+|Attribute Name|Description|
+|-----|-----|
 |**slove()**|slove the problem|
 ```python
 total_cost = pulp.value(model.objective)
