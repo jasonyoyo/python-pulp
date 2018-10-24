@@ -75,7 +75,7 @@ print('She is %s. She weights %gkg and is %dcm tall.'%('Rima',50.4,166))
 
 ### ● 決策變數函數(Create Decision Variables)
 
- 變數預設的範圍上限為無限，下限為0，變數型態為連續變數(continuous)<br>
+ 變數預設的範圍上限為正無限，下限為負無限，變數型態為連續變數(continuous)<br>
  
 <img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/variable.png" width="700"><br>
 
