@@ -115,20 +115,16 @@ pulp.LpStatus[model.status]
 |Attribute Name|Description|
 |-----|-----|
 |**varValue**|Value in the current solution|
-```python
-total_cost = pulp.value(model.objective)
-```
-
-|Attribute Name|Description|
-|-----|-----|
 |**variables.name**|variable name|
 ```python
-total_cost = pulp.value(model.objective)
+for v in prob.variables():
+    print(v.name, "=", v.varValue)
 ```
 
 |Attribute Name|Description|
 |-----|-----|
 |**slove()**|slove the problem|
 ```python
-total_cost = pulp.value(model.objective)
+model.solve()
 ```
+
