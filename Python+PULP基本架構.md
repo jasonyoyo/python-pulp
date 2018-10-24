@@ -71,19 +71,19 @@ print('She is %s. She weights %gkg and is %dcm tall.'%('Rima',50.4,166))
 
 ### ● 定義問題(Formulate Problem)
 
-<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/problem.png" width="700"><br>
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E5%AE%9A%E7%BE%A9%E5%95%8F%E9%A1%8C.png" width="700"><br>
 
 ### ● 決策變數函數(Create Decision Variables)
 
  變數預設的範圍上限為正無限，下限為負無限，變數型態為連續變數(continuous)<br>
  
-<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/variable.png" width="700"><br>
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E8%AE%8A%E6%95%B8.png" width="700"><br>
 
 ### ● 目標函數(Add Objective Function)
-<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/obj.png" width="700"><br>
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E7%9B%AE%E6%A8%99%E5%BC%8F.png" width="700"><br>
 
 ### ● 限制式函數(Add Constraints)
-<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/constraint.png" width="700">
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E9%99%90%E5%88%B6%E5%BC%8F.png" width="700">
 
 
 ### 2.Pulp attributes
