@@ -41,14 +41,14 @@
  
  ### ● 數學式
 
-- 目標式:Min:Σcost_i * Ingr_i
+- 目標式 : Min:Σcost_i * Ingr_i
 
 - 限制式:
-- 總重為100g: ΣIngr_i=100
-- 至少需要有8g protein: ΣproteinPercent_i * Ingr_i ≧ 8
-- 至少需要有6g fat: ΣfatPercent_i * Ingr_i ≧ 6
-- fibre不能超過2g: ΣfibrePercent_i * Ingr_i ≦ 2
-- salt不能超過0.4g: ΣsaltPercent_i * Ingr_i ≦ 0.4
+- 總重為100g : ΣIngr_i=100
+- 至少需要有8g protein : ΣproteinPercent_i * Ingr_i ≧ 8
+- 至少需要有6g fat : ΣfatPercent_i * Ingr_i ≧ 6
+- fibre不能超過2g : ΣfibrePercent_i * Ingr_i ≦ 2
+- salt不能超過0.4g : ΣsaltPercent_i * Ingr_i ≦ 0.4
  
 
 
