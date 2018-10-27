@@ -102,7 +102,15 @@ model.solve()
 |Attribute Name|Description|
 |-----|-----|
 |**status**|The return status of the problem from the solver.|
-|**status**|The return status of the problem from the solver.|
+
+|string value|numerical value|
+|-----|-----|
+|"Optimal"|1|
+|"Not Solve"|0|
+|"Infeasible"|-1|
+|"Unbounded"|-2|
+|"Undefined"|-3|
+
 ```python
 model.status
 ```
