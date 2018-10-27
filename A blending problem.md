@@ -1,19 +1,12 @@
-# Netflow problem
- *POLab*
- <br>
- *2017/11/04*
- <br>
- [【回到首頁】](https://github.com/PO-LAB/Python-Gurobi) <br>
- 
- 
- 
- ##### ※參考資料: https://wenku.baidu.com/view/b34a6a8f680203d8ce2f24b1?pcf=2#8 、[Gurobi-Python Interface Example](https://www.gurobi.com/documentation/6.5/examples/netflow_py.html)
+# A blending problem
+
+ ##### ※參考資料: https://pythonhosted.org/PuLP/CaseStudies/a_blending_problem.html 
   
  ## (一)問題描述
-此為Gurobi內建的範例，在此加以整理介紹。
+此為Pulp的官網範例，在此加以整理介紹。
+
  ### ● 題目:
- 有兩項產品(**鉛筆及鋼筆**)，分別由兩個城市生產(**底特律及丹佛**)，並送至其他三個城市(**波士頓、紐約及西雅圖**)，且必須滿足這三個
- 城市所需商品數量，每項商品運輸過程中不得超過每條路徑所能負荷的運能。  
+ 有一家公司要生產貓飼料，貓的飼料中含有Chicken、Beef、MUTTON、Rice、Wheat bran、Gel六種配料。它們的成本分別為$ 0.013, $ 0.008, $ 0.010, $ 0.002, $ 0.005, $ 0.001(All costs are per gram.) ，每100g的貓飼料成品中，至少需要有8g protein、6g fat，但是fibre不能超過2g、salt不能超過0.4g。
  ### ● 已知:
  如下圖所示<br>
  每條路徑都有相對應的運輸成本及運能，分別表示為:
