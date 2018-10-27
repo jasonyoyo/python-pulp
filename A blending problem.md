@@ -111,9 +111,6 @@ saltPercent = {'CHICKEN': 0.002,
                'GEL': 0.000}
 ```
 
-- 建立每個商品在每條路徑的運輸成本數據，以及每個節點的生產或需求量
-- 透過cost[h,i,j]來索引運輸成本
-- 透過inflow[h,j]來索引每個節點的生產或需求量
 
 
 
@@ -174,7 +171,14 @@ print('obj=',value(prob.objective))
 # for i in Ingredients:
 #   print(ingredient_vars[i],"=",ingredient_vars[i].value())
 
-```
+```Status: Optimal
+Ingr_BEEF = 60.0
+Ingr_CHICKEN = 0.0
+Ingr_GEL = 40.0
+Ingr_MUTTON = 0.0
+Ingr_RICE = 0.0
+Ingr_WHEAT = 0.0
+obj= 0.52
 
   
     
