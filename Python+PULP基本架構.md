@@ -90,12 +90,14 @@ print('She is %s. She weights %gkg and is %dcm tall.'%('Rima',50.4,166))
 在pulp中，可以透過各種屬性來查詢或更改所建立數學規劃的內容，以下為常用的幾個屬性:
 <br>P.S. 更多屬性查詢，可點擊[這裡](https://www.coin-or.org/PuLP/pulp.html)
 ### ● Model attributes:
+
 |Attribute Name|Description|
 |-----|-----|
-|**value(model.objective)**|objective value for current solution|
+|**slove()**|slove the problem|
 ```python
-total_cost = pulp.value(model.objective)
+model.solve()
 ```
+
 
 |Attribute Name|Description|
 |-----|-----|
@@ -113,6 +115,15 @@ pulp.LpStatus[model.status]
 'Optimal'
 ```
 
+
+|Attribute Name|Description|
+|-----|-----|
+|**value(model.objective)**|objective value for current solution|
+```python
+total_cost = pulp.value(model.objective)
+```
+
+
 |Attribute Name|Description|
 |-----|-----|
 |**varValue**|Value in the current solution|
@@ -122,10 +133,5 @@ for v in prob.variables():
     print(v.name, "=", v.varValue)
 ```
 
-|Attribute Name|Description|
-|-----|-----|
-|**slove()**|slove the problem|
-```python
-model.solve()
-```
+
 
