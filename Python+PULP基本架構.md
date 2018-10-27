@@ -102,6 +102,7 @@ model.solve()
 |Attribute Name|Description|
 |-----|-----|
 |**status**|The return status of the problem from the solver.|
+|**status**|The return status of the problem from the solver.|
 ```python
 model.status
 ```
