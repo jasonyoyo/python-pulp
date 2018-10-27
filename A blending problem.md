@@ -56,9 +56,8 @@
 
 
 
-## (三)Python+Gurobi
+## (三)Python+Pulp
 
-#### ※完整程式碼可點擊[這裡](https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/Netflow%20problem.py)
 
 ## Import gurobipy
 
