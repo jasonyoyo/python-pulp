@@ -18,15 +18,14 @@
   
  ### ● 目標:
  - 最小化總成本
- ### ● 限制:
+
+### ● 限制:
  每100g的貓飼料成品中，
  - 至少需要有8g protein
  - 至少需要有6g fat
  - fibre不能超過2g
  - salt不能超過0.4g
  
- ### ● 已知:
-|Stuff|Protein|fat|Fibre|Salt
 
   
  ## (二)數學模型
