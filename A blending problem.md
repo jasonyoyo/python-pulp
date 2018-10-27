@@ -29,26 +29,27 @@
 
   
  ## (二)數學模型
-  ### ● 符號設定
- - arcs:所有可能的運輸路線<br>
-  
- - nodes:所有運輸路線上的城市<br>
-  
- - commodities:所有等待運輸的產品<br>
-  
+ 
  ### ● 參數設定
- - cost[h,i,j]:商品h從城市i到城市j的運輸成本<br>
-  
- - capacity[i,j]:從城市i到城市j 的運能<br>
-  
- - inflow[h,j]:商品h在城市j的生產量或需求量<br>
+ - proteinPercent_i : 配料 i 中的proteinPercent
+ - fatPercent_i : 配料 i 中的fatPercent
+ - fibrePercent_i : 配料 i 中的fibrePercent
+ - saltPercent_i : 配料 i 中的saltPercent
  
  ### ● 決策變數
- - flow[h,i,j]:商品h從城市i到城市j的運輸總量
+ - Ingr_i : 每100g貓飼料中，配料 i 的含量
  
  ### ● 數學式
- <img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/Netflow%20problem/netflow%20problem%20model.PNG"  width=750>
 
+- 目標式:Min:Σcost_i * Ingr_i
+
+- 限制式:
+- 總重為100g: ΣIngr_i=100
+- 至少需要有8g protein: ΣproteinPercent_i * Ingr_i ≧ 8
+- 至少需要有6g fat: ΣfatPercent_i * Ingr_i ≧ 6
+- fibre不能超過2g: ΣfibrePercent_i * Ingr_i ≦ 2
+- salt不能超過0.4g: ΣsaltPercent_i * Ingr_i ≦ 0.4
+ 
 
 
 
