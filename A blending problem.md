@@ -171,7 +171,8 @@ print('obj=',value(prob.objective))
 # for i in Ingredients:
 #   print(ingredient_vars[i],"=",ingredient_vars[i].value())
 
-```Status: Optimal
+```
+Status: Optimal
 Ingr_BEEF = 60.0
 Ingr_CHICKEN = 0.0
 Ingr_GEL = 40.0
