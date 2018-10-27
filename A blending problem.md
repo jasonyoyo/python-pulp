@@ -6,24 +6,27 @@
 此為Pulp的官網範例，在此加以整理介紹。
 
  ### ● 題目:
- 有一家公司要生產貓飼料，貓的飼料中含有Chicken、Beef、MUTTON、Rice、Wheat bran、Gel六種配料。它們的成本分別為$ 0.013, $ 0.008, $ 0.010, $ 0.002, $ 0.005, $ 0.001(All costs are per gram.) ，每100g的貓飼料成品中，至少需要有8g protein、6g fat，但是fibre不能超過2g、salt不能超過0.4g。
+ 有一家公司要生產貓飼料，希望能在滿足營養的情況下，成本越低越好，貓的飼料中含有Chicken、Beef、MUTTON、Rice、Wheat bran、Gel六種配料。它們的成本分別為$ 0.013, $ 0.008, $ 0.010, $ 0.002, $ 0.005, $ 0.001(All costs are per gram.) ，每100g的貓飼料成品中，至少需要有8g protein、6g fat，但是fibre不能超過2g、salt不能超過0.4g。
+ 
  ### ● 已知:
- 如下圖所示<br>
- 每條路徑都有相對應的運輸成本及運能，分別表示為:
- - (capacity , pencils transportation cost , pens transportation cost)<br>
-
-  
- 每個城市所擁有或所需要的商品數量:
- - (pencils inflow , pens inflows)
- <div align=center>
- <img src="https://github.com/wurmen/Gurobi-Python/blob/master/python-gurobi%20%20model/picture/Netflow%20problem/netflow%20problem%20picture.PNG"  width="614" height="356"/>
- </div>
+|Stuff|Protein|fat|Fibre|Salt
+|-----|-----|-----|-----|-----|
+|Chicken|0.1|0.08|0.001|0.002|
+|Beef|0.2|0.1|0.005|0.005|
+|Rice|0|0.01|0.1|0.002|
+|Wheat bran|0.04|0.01|0.15|0.008|
   
  ### ● 目標:
- - 最小化總運輸成本
+ - 最小化總成本
  ### ● 限制:
- - 經過每條路徑上的商品總數不得超過其所能負荷的運能
- - 必須滿足波士頓、紐約及西雅圖所需的商品數量
+ 每100g的貓飼料成品中，
+ - 至少需要有8g protein
+ - 至少需要有6g fat
+ - fibre不能超過2g
+ - salt不能超過0.4g
+ 
+ ### ● 已知:
+|Stuff|Protein|fat|Fibre|Salt
 
   
  ## (二)數學模型
